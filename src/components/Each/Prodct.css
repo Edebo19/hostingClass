@@ -1,0 +1,75 @@
+.Product{
+    height: max-content;
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;    
+    /* justify-content: center; */
+    flex-direction: column;
+    transition: all 350ms ease;
+    position: relative; 
+    
+}
+.ProductCardHolder{
+    height: max-content;
+    min-height: 70vh;
+    width: 87%;
+    /* background: red; */
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.CartHolder{
+    height: 100vh;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.464);
+    position: absolute;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    animation: slideInRight; 
+    animation-duration: 1s;
+}
+.CartLogo{
+    height: 70px;
+    width: 70px;
+    background: #000;
+    border-radius: 50%;
+
+    & img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.logo{
+    transform: scale(1);
+    transition: all 350ms ease;
+}
+.logo:hover{
+    transform: scale(1.07);
+    transition: all 350ms ease;
+    
+}
+.CartHeader{
+    height: 10%;
+    width: 97%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 350ms ease;
+}
+.CartWhole{
+    height: 80%;
+    border-radius: 10px;
+    width: 60%;
+    background: rgb(223, 219, 219);
+}

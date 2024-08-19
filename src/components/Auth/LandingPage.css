@@ -1,0 +1,195 @@
+.LandingPage{
+    height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+}
+.LandingPageHeader{
+    height: 15%;
+    width: 90%;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.LandLogo{
+    height: 100px;
+    width: 100px;
+    /* background: red; */
+    padding-top: 4px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+
+    & img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.LoginBar{
+    height: 100%;
+    width: 20%;
+    /* background: palegreen;    */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    & button{
+        height: 50%;
+        width: 40%;
+        background: rgba(224, 149, 10, 0.938);
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        color: black;
+        font-size: 17px;
+        transition: all 350ms ease;
+    }
+    & button:hover{
+        background: orange;
+    }
+    & .transparent{
+        height: 50%;
+        width: 40%;
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 7px;
+        color: black;
+        font-size: 17px;
+    }
+
+    & .transparent:hover{
+        background: orange;
+        transition: all 350ms ease;
+    }
+}
+.Account{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+    display: none;
+}
+
+.Body{
+    height: 85%;
+    width: 100%;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    flex-direction: row
+}
+.Left{
+    height: 70%;
+    width: 50%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ImageHolder{
+    height: 100%;
+    width: 80%;
+    background: transparent;
+
+    & img{
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}
+.Right{
+    height: 70%;
+    width: 50%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    & button{
+        height: 60px;
+        width: 200px;
+        border: none;
+        border-radius: 7px;
+        background: rgba(224, 149, 10, 0.938);
+        color: black;
+        font-size: 20px;
+        transition: all 350ms ease;
+    }
+
+    & button:hover{
+        background: orange;
+        transition: all 350ms ease;
+        cursor: pointer;
+    }
+    & h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: black;
+    }
+}
+@media screen and (max-width: 768px) {
+    .Account{
+        display: block;
+        /* text-align: center;   */
+        /* align-items: center;
+        justify-content: center; */
+        padding-top: 30px;
+        padding-left: 15px;
+
+    }
+    .Left{
+        width: 60%;
+        height: 40%;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .LoginBar{
+        display: none;
+    }
+    .Right{
+        height: 40%;
+        width: 40%;
+        /* background: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    
+        & button{
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 7px;
+            background: rgba(224, 149, 10, 0.938);
+            color: black;
+            font-size: 15px;
+            transition: all 350ms ease;
+        }
+    
+        & button:hover{
+            background: orange;
+            transition: all 350ms ease;
+            cursor: pointer;
+        }
+        & h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: black;
+        }
+    }
+}

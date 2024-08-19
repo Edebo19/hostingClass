@@ -1,0 +1,67 @@
+.Vendors{
+    height: 240px;
+    width: 100%;
+    background: rgba(255, 166, 0, 0.87);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    transform: scale(1);
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+
+.VendorsLeft{
+    height: 100%;
+    width: max-content;
+    min-width: 23%;
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 10px;
+    justify-content: center;
+
+    & h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+    & p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    }
+}
+.VendorsRight{
+    height: 90%;
+    width: 19%;
+    background: pink;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 350ms ease;
+
+
+    & img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.Vendors:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: all 350ms ease;
+}
+@media screen and (max-width: 768px) {
+    .Vendors{
+        flex-direction: column;
+        height: 350px;
+
+    }
+    .VendorsRight{
+        width: 58%;
+        height: 100%;
+    }
+
+}

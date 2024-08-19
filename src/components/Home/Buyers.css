@@ -1,0 +1,138 @@
+.Buyers{
+    min-height: 100vh;
+    background: black;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CardHolder{
+    height: max-content;
+    min-height: 70vh;
+    width: 87%;
+    /* background: red; */
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.Card{
+    height: 350px;
+    width: 285.5px;
+    min-width: 280px;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imageHolder{
+    height: 70%;
+    width: 100%;
+    background: red;
+
+    & img{
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}
+.Text{
+    height: 25%;
+    width: 100%;
+    /* background: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+
+    & h2{
+        font-size: 26px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+.buttonHolder{
+    height: 50%;
+    width: 100%;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    & button{
+        height: 80%;
+        width: 35%;
+        border: none;
+        color: black;
+        font-size: 16px;
+        border-radius: 20px;
+        background: rgba(224, 149, 10, 0.938);
+    }
+    & button:hover{
+        background: orange;
+        transition: all 350ms ease;
+        cursor: pointer;
+    }
+}
+.CartHolder{
+    height: 100vh;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.464);
+    position: absolute;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    animation: slideInRight; 
+    animation-duration: 1s;
+}
+.CartLogo{
+    height: 70px;
+    width: 70px;
+    background: #000;
+    border-radius: 50%;
+
+    & img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.logo{
+    transform: scale(1);
+    transition: all 350ms ease;
+}
+.logo:hover{
+    transform: scale(1.07);
+    transition: all 350ms ease;
+    
+}
+.CartHeader{
+    height: 10%;
+    width: 97%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 350ms ease;
+}
+.CartWhole{
+    height: 80%;
+    border-radius: 10px;
+    width: 60%;
+    background: rgb(223, 219, 219);
+}
