@@ -6,7 +6,7 @@ export const food = [
         description: "",
         Category:"Food",
         price: 2500,
-        vendorname: "Iya Bolu"
+        vendorname: "Mama Rita"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const food = [
         description: "",
         Category:"Fruits",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Abubakar"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const food = [
         description: "",
         Category:"Fruits",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Abubakar"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const food = [
         description: "",
         Category:"Food",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Mama Rita"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const food = [
         description: "",
         Category:"Food",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Mama Rita"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ export const food = [
         description: "",
         Category:"Snacks",
         price: 500,
-        vendorname: "Iya Bolu"
+        vendorname: "Creamy Bakes"
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ export const food = [
         description: "",
         Category:"Snacks",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Creamy Bakes"
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ export const food = [
         description: "",
         Category:"Drinks",
         price: 500,
-        vendorname: "Iya Bolu"
+        vendorname: "Drink Valore"
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ export const food = [
         description: "",
         Category:"Snacks",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Creamy Bakes"
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ export const food = [
         description: "",
         Category:"Drinks",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Drink Valore"
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ export const food = [
         description: "",
         Category:"Drinks",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Drink Valore"
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ export const food = [
         description: "",
         Category:"Drinks",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Drink Valore"
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ export const food = [
         description: "",
         Category:"Foods",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Mama Rita"
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ export const food = [
         description: "",
         Category:"Food",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Mama Rita"
     },
     {
         id: 15,
@@ -132,6 +132,6 @@ export const food = [
         description: "",
         Category:"Fruits",
         price: 2000,
-        vendorname: "Iya Bolu"
+        vendorname: "Abubakar"
     },
 ]
