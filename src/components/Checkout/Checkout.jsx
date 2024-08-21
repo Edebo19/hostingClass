@@ -1,9 +1,18 @@
 import React, { useState } from 'react'
 import './Checkout.css'
 import { LuLocate } from 'react-icons/lu'
+import { Vendor } from '../JS/Vendors'
+import { useSelector } from 'react-redux'
 
 const Checkout = () => {
     const [showUp, setShowUp] = useState(0)
+    const [vendors, setVendors] = useState("")
+    // console.log(vendors)
+    const FilteredVendor = Vendor.filter((e)=> e.vendorname === vendors)
+    console.log(FilteredVendor)
+    const {cartArr} = useSelector((state)=> state)
+    console.log(cartArr.filter((e)=> e.vendorname))
+
     const food = [
         {
             id: 4,
@@ -52,6 +61,14 @@ const Checkout = () => {
             <div className="PaymentMethod">
                 <div className="PaymentHeader">
                     <h3>Select Payment method:</h3>
+                    <select onChange={(e)=> setVendors(e.target.value)}>
+                        <option value="">--Vendors--</option>
+                        <option value="Creamy Bakes">Creamy Bakes</option>
+                        <option value="Mama Rita">Mama Rita</option>
+                        <option value="Iya Bisi">Iya Bisi</option>
+                        <option value="Drink Valore">Drink Valore</option>
+                        <option value="Abubakar">Abubakar</option>
+                    </select>
                 </div>
                 
             </div>

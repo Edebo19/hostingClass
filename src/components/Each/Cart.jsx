@@ -7,6 +7,7 @@ import CartNone from './CartNone'
 import { useNavigate } from 'react-router-dom'
 
 
+
 const Cart = ({setCheckout}) => {
     const {cartArr, total} = useSelector((state)=> state)
     const dispatch = useDispatch()
@@ -19,6 +20,7 @@ const Cart = ({setCheckout}) => {
         setCheckout(true),
         Nav("/checkout")
     }
+    
   return (
  <>
  {
